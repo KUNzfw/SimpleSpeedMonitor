@@ -28,20 +28,30 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.labelText = new System.Windows.Forms.Label();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.SuspendLayout();
             // 
             // labelText
             // 
-            this.labelText.AutoSize = true;
-            this.labelText.Font = new System.Drawing.Font("微软雅黑", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.labelText.ContextMenuStrip = this.contextMenuStrip1;
+            this.labelText.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.labelText.Font = new System.Drawing.Font("微软雅黑", 9F);
             this.labelText.ForeColor = System.Drawing.Color.White;
             this.labelText.Location = new System.Drawing.Point(0, 0);
             this.labelText.Margin = new System.Windows.Forms.Padding(0);
             this.labelText.Name = "labelText";
-            this.labelText.Size = new System.Drawing.Size(121, 25);
+            this.labelText.Size = new System.Drawing.Size(99, 43);
             this.labelText.TabIndex = 0;
-            this.labelText.Text = "Hello World";
+            this.labelText.Text = "U: 0kB/s\r\nD: 0kB/s";
+            this.labelText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
             // DeskBandUI
             // 
@@ -50,14 +60,14 @@
             this.BackColor = System.Drawing.Color.Black;
             this.Controls.Add(this.labelText);
             this.Name = "DeskBandUI";
-            this.Size = new System.Drawing.Size(138, 30);
+            this.Size = new System.Drawing.Size(99, 43);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Label labelText;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
     }
 }
